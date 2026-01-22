@@ -45,21 +45,11 @@ body {
 }
 
 /*aqui é onde fica responsivo a imagem no mobile */
-@media (max-width: 768px) { 
-
+/* Mobile */
+@media (max-width: 768px) {
   .hero {
-    min-height: 85svh; /* resolve bug do 100vh no mobile */
-    background-position: center top; /* evita cortar o foco */
-    padding: 40px 16px;
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem;
-    line-height: 1.2;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
+    background-image: url("img/capa-mobile.png");
+    background-position: center top;
   }
 }
 
