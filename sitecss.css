@@ -14,16 +14,27 @@ body {
 }
 
 @keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .hero {
   height: 110vh;
-  background-image: url("img/capa.png"); /* caminho da imagem */
-  background-attachment: fixed; /* efeito parallax leve */
-  background-repeat: no-repeat;   /* ISSO resolve a duplicação */
+  background-image: url("img/capa.png");
+  /* caminho da imagem */
+  background-attachment: fixed;
+  /* efeito parallax leve */
+  background-repeat: no-repeat;
+  /* ISSO resolve a duplicação */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -33,10 +44,38 @@ body {
   padding: 20px;
 }
 
+.hero-content {
+  animation: fadeIn 1.5s ease forwards;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+      background: rgba(255, 255, 255, .12);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 30px;
+    transition: .4s;
+    margin: 20px;
+}
+
+/* efeito de fade in ( texto aparece lentamente */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
-  text-shadow: 0 6px 25px rgba(0,0,0,.7);
+  text-shadow: 0 6px 25px rgba(0, 0, 0, .7);
 }
 
 .hero p {
@@ -49,15 +88,17 @@ body {
 @media (max-width: 768px) {
   .hero {
     background-image: url("img/capa-mobile.png");
-    background-attachment: fixed; /* efeito parallax leve */
-    background-repeat: no-repeat;   /* ISSO resolve a duplicação */
+    background-attachment: fixed;
+    /* efeito parallax leve */
+    background-repeat: repeat-y;
+    /* ISSO resolve a duplicação */
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;    
+    padding: 20px;
   }
 }
 
@@ -77,13 +118,21 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(34,197,94,.7); }
-  70% { box-shadow: 0 0 0 25px rgba(34,197,94,0); }
-  100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, .7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 25px rgba(34, 197, 94, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
 }
 
 section {
@@ -101,7 +150,7 @@ section h2 {
 }
 
 .card {
-  background: rgba(255,255,255,.12);
+  background: rgba(255, 255, 255, .12);
   backdrop-filter: blur(12px);
   border-radius: 25px;
   padding: 30px;
@@ -115,27 +164,37 @@ section h2 {
 footer {
   text-align: center;
   padding: 40px 20px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .5);
   font-size: .9rem;
 }
 
 @media (max-width: 600px) {
-  .hero h1 { font-size: 2.5rem; }
-  .hero p { font-size: 1.1rem; }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
 }
 
 /* aqui é onde se configura o botão do whatsapp */
 .whatsapp-float {
-  position: fixed; /* Fixa o botão */
+  position: fixed;
+  /* Fixa o botão */
   bottom: 20px;
   right: 20px;
   z-index: 1000;
   width: 60px;
   height: 60px;
-  background-color: #25d366; /* Cor do WhatsApp */
-  border-radius: 50%; /* Deixa o ícone redondo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
-  display: flex; /* Centraliza o ícone */
+  background-color: #25d366;
+  /* Cor do WhatsApp */
+  border-radius: 50%;
+  /* Deixa o ícone redondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Sombra */
+  display: flex;
+  /* Centraliza o ícone */
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -145,25 +204,32 @@ footer {
 .whatsapp-float i {
   font-size: 35px;
   color: white;
-  margin-top: 4px; /* Ajusta a posição vertical */
+  margin-top: 4px;
+  /* Ajusta a posição vertical */
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1); /* Efeito ao passar o mouse */
+  transform: scale(1.1);
+  /* Efeito ao passar o mouse */
 }
 
 /* aqui é onde se configura o botão do intagram */
 .instagram-float {
-  position: fixed; /* Fixa o botão */
+  position: fixed;
+  /* Fixa o botão */
   bottom: 20px;
   right: 90px;
   z-index: 1000;
   width: 60px;
   height: 60px;
-  background-color: #d3256d; /* Cor do WhatsApp */
-  border-radius: 50%; /* Deixa o ícone redondo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
-  display: flex; /* Centraliza o ícone */
+  background-color: #d3256d;
+  /* Cor do WhatsApp */
+  border-radius: 50%;
+  /* Deixa o ícone redondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Sombra */
+  display: flex;
+  /* Centraliza o ícone */
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -173,24 +239,29 @@ footer {
 .instagram-float i {
   font-size: 30px;
   color: white;
-  margin-top: 4px; /* Ajusta a posição vertical */
+  margin-top: 4px;
+  /* Ajusta a posição vertical */
 }
 
 .instagram-float:hover {
-  transform: scale(1.1); /* Efeito ao passar o mouse */
+  transform: scale(1.1);
+  /* Efeito ao passar o mouse */
 }
 
 /* aqui é onde se configura o botão voltar ao TOPO */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Estilos para o botão (pode ser personalizado com classes do Bootstrap) */
 #btn-back-to-top {
-    position: fixed;
-    bottom: 90px; /* Posição inferior */
-    right: 20px;  /* Posição direita */
-    z-index: 1000; /* Para ficar acima de outros elementos */
+  position: fixed;
+  bottom: 90px;
+  /* Posição inferior */
+  right: 20px;
+  /* Posição direita */
+  z-index: 1000;
+  /* Para ficar acima de outros elementos */
 }
 
 
@@ -213,8 +284,9 @@ html {
   list-style: none;
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(12px);
-  border-radius: 999px; /* super arredondado */
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+  border-radius: 999px;
+  /* super arredondado */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
 }
 
 /* Links */
@@ -227,7 +299,7 @@ html {
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
-  background: rgba(255,255,255,0);
+  background: rgba(255, 255, 255, 0);
   transition:
     background-color 0.25s ease,
     box-shadow 0.25s ease,
@@ -236,15 +308,15 @@ html {
 
 /* Hover LIMPO (sem estado persistente) */
 .menu a:hover {
-  background-color: rgba(255,255,255,0.18);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12);
+  background-color: rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
   transform: translateY(-1px);
 }
 
 
 /* Item ativo */
 .menu a.active {
-  background: rgba(255,255,255,0.28);
+  background: rgba(255, 255, 255, 0.28);
   color: #fff;
 }
 
@@ -264,7 +336,7 @@ html {
   }
 
   .menu {
-    box-shadow: 0 -10px 30px rgba(0,0,0,.45);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, .45);
     width: 100%;
     justify-content: space-between;
     gap: 6px;
@@ -287,3 +359,19 @@ html {
   }
 }
 
+/* aqui tira o efeito de link azul dos destinos*/
+.item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Efeito de clique */
+.item {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+}

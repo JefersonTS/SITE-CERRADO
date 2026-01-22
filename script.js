@@ -6,13 +6,13 @@ function scrollToSection(id) {
 }
 
 
-window.addEventListener('scroll', function() {
-    var btn = document.getElementById('btn-back-to-top');
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        btn.style.display = 'block';
-    } else {
-        btn.style.display = 'none';
-    }
+window.addEventListener('scroll', function () {
+  var btn = document.getElementById('btn-back-to-top');
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
 });
 
 
@@ -43,3 +43,12 @@ menu.addEventListener('mouseleave', () => {
 menu.addEventListener('mouseenter', () => {
   indicator.style.opacity = '1';
 });
+
+//paralax video paraiso achado
+const video = document.querySelector('.video-hero video');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  video.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.2}px))`;
+});
+
