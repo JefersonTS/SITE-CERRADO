@@ -44,12 +44,20 @@ body {
   margin-bottom: 30px;
 }
 
-/*aqui é onde fica responsivo a imagem no mobile */
+/*aqui é onde fica a imagem no mobile */
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
     background-image: url("img/capa-mobile.png");
-    background-position: center top;
+    background-attachment: fixed; /* efeito parallax leve */
+    background-repeat: no-repeat;   /* ISSO resolve a duplicação */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;    
   }
 }
 
