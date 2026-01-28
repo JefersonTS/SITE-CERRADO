@@ -2,191 +2,191 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    text-align: center;
-    background: linear-gradient(120deg, #064e3b, #022c22, #000);
-    background-size: 300% 300%;
-    animation: gradientMove 12s ease infinite;
-    color: #fff;
-    scroll-behavior: smooth;
+  text-align: center;
+  background: linear-gradient(120deg, #064e3b, #022c22, #000);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
 /*ajuste do video para ficar atraz do header class video-hero*/
 .video-hero {
-    position: relative;
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: #fff;
+  color: #fff;
 
-    background-attachment: fixed;
-    background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Vídeo de fundo */
 .video-hero video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* Overlay escuro */
 .video-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
 }
 
 /* Conteúdo */
 .video-content {
-    animation: fadeIn 1.5s ease forwards;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    max-width: 800px;
-    padding: 20px;
-        background: rgba(255, 255, 255, .12);
-    backdrop-filter: blur(12px);
-    border-radius: 25px;
-    padding: 30px;
-    transition: .4s;
-    margin: 20px;
+  animation: fadeIn 1.5s ease forwards;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px;
+  transition: 0.4s;
+  margin: 20px;
 }
 
 /* efeito de fade in ( texto aparece lentamente */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .video-content h1 {
-    font-size: 3rem;
-    margin-bottom: 16px;
+  font-size: 3rem;
+  margin-bottom: 16px;
 }
 
 .video-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 /* edições do video para mobile*/
 @media (max-width: 768px) {
-    .video-hero {
-        height: 85svh;
-    }
+  .video-hero {
+    height: 85svh;
+  }
 
-    .video-content h1 {
-        font-size: 2rem;
-    }
+  .video-content h1 {
+    font-size: 2rem;
+  }
 
-    .video-content p {
-        font-size: 1rem;
-    }
+  .video-content p {
+    font-size: 1rem;
+  }
 }
 
 /*formatação da extrutura em geral */
 .estrutura {
-    padding: 80px 20px;
-    background: transparent;
+  padding: 80px 20px;
+  background: transparent;
 }
 
 .estrutura-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
 }
 
 /* TEXTO 'NOSSA ESTRUTURA' */
 .estrutura-label {
-    font-size: 0.75rem;
-    letter-spacing: 10px;
-    color: #6cc24a;
-    font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 10px;
+  color: #6cc24a;
+  font-weight: 600;
 }
 
 /* TEXTO 'o que oferecemos' */
 .estrutura-texto h2 {
-    font-size: 2.6rem;
-    margin: 16px 0 24px;
-    color: #ffffff;
+  font-size: 2.6rem;
+  margin: 16px 0 24px;
+  color: #ffffff;
 }
 
 /* TEXTO 'No Paraíso Achado, prezamos pelo...' */
 .estrutura-texto p {
-    background: rgba(255, 255, 255, .12);
-    backdrop-filter: blur(12px);
-    border-radius: 25px;
-    padding: 30px;
-    transition: .4s;
-    margin: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px;
+  transition: 0.4s;
+  margin: 20px;
 }
 
 /* ITENS */
 .estrutura-itens {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .item img {
-    width: 36px;
-    margin-bottom: 12px;
+  width: 36px;
+  margin-bottom: 12px;
 }
 
 /* formata 'barzinho', 'banheiro', 'monitor' e 'tenda'*/
 .item h3 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .item p {
-    background: rgba(255, 255, 255, .12);
-    backdrop-filter: blur(12px);
-    border-radius: 25px;
-    padding: 30px;
-    transition: .4s;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px;
+  transition: 0.4s;
 }
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
-    .estrutura-container {
-        grid-template-columns: 1fr;
-    }
+  .estrutura-container {
+    grid-template-columns: 1fr;
+  }
 
-    .estrutura-texto h2 {
-        font-size: 2rem;
-    }
+  .estrutura-texto h2 {
+    font-size: 2rem;
+  }
 
-    .estrutura-itens {
-        grid-template-columns: 1fr;
-    }
+  .estrutura-itens {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*aqui é onde formata as imagens das cachoeiras*/
@@ -200,8 +200,8 @@ gr-id {
 }
 
 sq-image {
-    width:100%;
-    border-radius: 1em;
+  width: 100%;
+  border-radius: 1em;
 }
 
 /* imagem */
@@ -209,7 +209,9 @@ sq-image img {
   width: 100%;
   display: block;
   border-radius: 1em;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 /* DESKTOP - passar o mouse */
@@ -223,4 +225,26 @@ sq-image:active img,
 sq-image:focus-within img {
   transform: scale(1.08);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* aqui é onde formata o texto dentro das imagens*/
+.img-achado {
+  position: relative;
+}
+
+#image {
+  position: absolute;
+}
+
+.img-achado p {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 20px;
+  transition: 0.4s;
+  margin: 20px;
+  position: absolute;
+  font-size: 20px;
+  left: 250px;
+  bottom: 50px;
 }
