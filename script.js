@@ -52,3 +52,4 @@ window.addEventListener('scroll', () => {
   video.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.2}px))`;
 });
 
+

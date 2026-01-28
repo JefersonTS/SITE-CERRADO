@@ -188,3 +188,39 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/*aqui é onde formata as imagens das cachoeiras*/
+
+gr-id {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
+  gap: 1.5rem;
+  justify-content: center;
+  margin-block-end: 3rem;
+}
+
+sq-image {
+    width:100%;
+    border-radius: 1em;
+}
+
+/* imagem */
+sq-image img {
+  width: 100%;
+  display: block;
+  border-radius: 1em;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* DESKTOP - passar o mouse */
+sq-image:hover img {
+  transform: scale(1.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* MOBILE - toque com o dedo */
+sq-image:active img,
+sq-image:focus-within img {
+  transform: scale(1.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
