@@ -14,6 +14,13 @@ body {
   scroll-behavior: smooth;
 }
 
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
 /*ajuste do video para ficar atraz do header class video-hero*/
 .video-hero {
   position: relative;
@@ -247,4 +254,49 @@ sq-image:focus-within img {
   font-size: 20px;
   left: 250px;
   bottom: 50px;
+}
+
+/* aqui é onde se configura o botão voltar ao TOPO */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para o botão (pode ser personalizado com classes do Bootstrap) */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 90px;
+  /* Posição inferior */
+  right: 20px;
+  /* Posição direita */
+  z-index: 1000;
+  /* Para ficar acima de outros elementos */
+}
+
+.btn {
+  padding: 18px 40px;
+  border-radius: 40px;
+  background: #22c55e;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: pulse 2.5s infinite;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para o botão (pode ser personalizado com classes do Bootstrap) */
+#btn-back-to-index {
+  position: fixed;
+  top: 90px;
+  /* Posição inferior */
+  left: 20px;
+  /* Posição direita */
+  z-index: 1000;
+  /* Para ficar acima de outros elementos */
 }

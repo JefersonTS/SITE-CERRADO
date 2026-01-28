@@ -5,7 +5,7 @@ function scrollToSection(id) {
   }
 }
 
-
+/*aqui é onde faz o efeito do botão aparecer quando rolar tela abaixo*/
 window.addEventListener('scroll', function () {
   var btn = document.getElementById('btn-back-to-top');
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -13,6 +13,12 @@ window.addEventListener('scroll', function () {
   } else {
     btn.style.display = 'none';
   }
+});
+
+/*aqui é onde faz o efeito do botão aparecer voltar tela acima*/
+window.addEventListener('scroll', function () {
+  var btn = document.getElementById('btn-back-to-index');
+    btn.style.display = 'block';
 });
 
 

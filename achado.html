@@ -6,132 +6,170 @@
     <title>Paraiso Achado</title>
     <link rel="stylesheet" href="cssachado.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- icone seta pra voltar -->
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- icone seta pra cima -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
+  <body>
+    <a
+      href="index.html"
+      class="btn btn-primary btn-floating btn-lg rounded-circle shadow-lg"
+      id="btn-back-to-index"
+      style="display: none"
+    >
+      <i class="fas fa-chevron-left"></i>
+
+      <!-- Ícone de seta (precisa do Font Awesome) -->
+    </a>
+
+    <script src="script.js"></script>
+
+    <div id="topo"></div>
+
+    <header class="video-hero">
+      <video autoplay muted loop playsinline>
+        <source src="videos/ParaisoAchado.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-content">
+        <h1>Paraíso Achado</h1>
+        <p>
+          Um refúgio com cachoeiras, piscinas naturais e trilhas, perfeito para
+          relaxar e se conectar com a natureza.
+        </p>
+      </div>
+    </header>
+
+    <section class="estrutura">
+      <div class="estrutura-container">
+        <!-- TEXTO À ESQUERDA -->
+        <div class="estrutura-texto">
+          <span class="estrutura-label">NOSSA ESTRUTURA</span>
+          <h2>O que oferecemos a você</h2>
+
+          <p>
+            No Paraíso Achado, prezamos pelo conforto e segurança dos nossos
+            visitantes. Nossa infraestrutura foi planejada para proporcionar uma
+            experiência completa e agradável em meio à natureza.
+          </p>
+
+          <p>
+            Além das belezas naturais, disponibilizamos uma estrutura pensada
+            para sua comodidade, garantindo que sua visita seja inesquecível e
+            segura.
+          </p>
+        </div>
+
+        <!-- ITENS À DIREITA -->
+        <div class="estrutura-itens">
+          <div class="item">
+            <img src="icones/bar.png" alt="Barzinho" />
+            <h3>Barzinho</h3>
+            <p>
+              Nosso bar oferece bebidas refrescantes e petiscos deliciosos para
+              você aproveitar ainda mais o passeio.
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="icones/banheiro.png" alt="Banheiros" />
+            <h3>Banheiros</h3>
+            <p>
+              Contamos com banheiros limpos e bem estruturados, garantindo mais
+              conforto durante sua visita.
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="icones/guia-turistico.png" alt="Monitores" />
+            <h3>Monitores</h3>
+            <p>
+              Nossa equipe está sempre presente para orientar, auxiliar e
+              garantir sua segurança.
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="icones/barraca.png" alt="Tenda" />
+            <h3>Tenda</h3>
+            <p>
+              Disponibilizamos tendas para descanso e proteção contra o sol,
+              garantindo mais conforto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <gr-id>
+      <sq-image>
+        <div class="img-achado">
+          <img id="imagem" src="img/coca.png" />
+          <p id="texto">Cachoeira da Coca</p>
+        </div>
+      </sq-image>
+
+      <sq-image>
+        <div class="img-achado">
+          <img id="imagem" src="img/pocoCoca.png" />
+          <p id="texto">Poço da Coca</p>
+        </div>
+      </sq-image>
+
+      <sq-image>
+        <div class="img-achado">
+          <img id="imagem" src="img/mergulho.png" />
+          <p id="texto">Poço do Mergulho</p>
+        </div>
+      </sq-image>
+    </gr-id>
+
+    <gr-id>
+      <sq-image>
+        <div class="img-achado">
+          <img id="imagem" src="img/abismo.png" />
+          <p id="texto">Cachoeira do Abismo</p>
+        </div>
+      </sq-image>
+
+      <sq-image>
+        <div class="img-achado">
+          <img id="imagem" src="img/gruta.png" />
+          <p id="texto">Cachoeira da Gruta</p>
+        </div>
+      </sq-image>
+
+      <sq-image>
+        <div class="img-achado">
+          <img id="imagem" src="img/namorados.png" />
+          <p id="texto">Poço dos Namorados</p>
+        </div>
+      </sq-image>
+    </gr-id>
+
+    <footer>
+      <p>© Cerrado 4x4 • Aventuras que ficam na memória</p>
+    </footer>
+
+    <a
+      href="#topo"
+      class="btn btn-primary btn-floating btn-lg rounded-circle shadow-lg"
+      id="btn-back-to-top"
+      style="display: none"
+    >
+      <i class="fas fa-arrow-up"></i>
+      <!-- Ícone de seta (precisa do Font Awesome) -->
+    </a>
+  </body>
 </html>
-
-<body>
-  <script src="script.js"></script>
-
-  <header class="video-hero">
-    <video autoplay muted loop playsinline>
-      <source src="videos/ParaisoAchado.mp4" type="video/mp4" />
-    </video>
-
-    <div class="video-content">
-      <h1>Paraíso Achado</h1>
-      <p>
-        Um refúgio com cachoeiras, piscinas naturais e trilhas, perfeito para
-        relaxar e se conectar com a natureza.
-      </p>
-    </div>
-  </header>
-
-  <section class="estrutura">
-    <div class="estrutura-container">
-      <!-- TEXTO À ESQUERDA -->
-      <div class="estrutura-texto">
-        <span class="estrutura-label">NOSSA ESTRUTURA</span>
-        <h2>O que oferecemos a você</h2>
-
-        <p>
-          No Paraíso Achado, prezamos pelo conforto e segurança dos nossos
-          visitantes. Nossa infraestrutura foi planejada para proporcionar uma
-          experiência completa e agradável em meio à natureza.
-        </p>
-
-        <p>
-          Além das belezas naturais, disponibilizamos uma estrutura pensada para
-          sua comodidade, garantindo que sua visita seja inesquecível e segura.
-        </p>
-      </div>
-
-      <!-- ITENS À DIREITA -->
-      <div class="estrutura-itens">
-        <div class="item">
-          <img src="icones/bar.png" alt="Barzinho" />
-          <h3>Barzinho</h3>
-          <p>
-            Nosso bar oferece bebidas refrescantes e petiscos deliciosos para
-            você aproveitar ainda mais o passeio.
-          </p>
-        </div>
-
-        <div class="item">
-          <img src="icones/banheiro.png" alt="Banheiros" />
-          <h3>Banheiros</h3>
-          <p>
-            Contamos com banheiros limpos e bem estruturados, garantindo mais
-            conforto durante sua visita.
-          </p>
-        </div>
-
-        <div class="item">
-          <img src="icones/guia-turistico.png" alt="Monitores" />
-          <h3>Monitores</h3>
-          <p>
-            Nossa equipe está sempre presente para orientar, auxiliar e garantir
-            sua segurança.
-          </p>
-        </div>
-
-        <div class="item">
-          <img src="icones/barraca.png" alt="Tenda" />
-          <h3>Tenda</h3>
-          <p>
-            Disponibilizamos tendas para descanso e proteção contra o sol,
-            garantindo mais conforto.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <gr-id>
-    <sq-image>
-      <div class="img-achado">
-        <img id="imagem" src="img/coca.png" />
-        <p id="texto">Cachoeira da Coca</p>
-      </div>
-    </sq-image>
-
-    <sq-image>
-      <div class="img-achado">
-        <img id="imagem" src="img/pocoCoca.png" />
-        <p id="texto">Poço da Coca</p>
-      </div>
-    </sq-image>
-
-    <sq-image>
-      <div class="img-achado">
-        <img id="imagem" src="img/mergulho.png" />
-        <p id="texto">Poço do Mergulho</p>
-      </div>
-    </sq-image>
-  </gr-id>
-
-  <gr-id>
-    <sq-image>
-      <div class="img-achado">
-        <img id="imagem" src="img/abismo.png" />
-        <p id="texto">Cachoeira do Abismo</p>
-      </div>
-    </sq-image>
-
-    <sq-image>
-      <div class="img-achado">
-        <img id="imagem" src="img/gruta.png" />
-        <p id="texto">Cachoeira da Gruta</p>
-      </div>
-    </sq-image>
-
-    <sq-image>
-      <div class="img-achado">
-        <img id="imagem" src="img/namorados.png" />
-        <p id="texto">Poço dos Namorados</p>
-      </div>
-    </sq-image>
-  </gr-id>
-</body>
