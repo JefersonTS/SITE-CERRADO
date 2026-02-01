@@ -6,6 +6,7 @@
 }
 
 body {
+  text-align: center;
   background: linear-gradient(120deg, #064e3b, #022c22, #000);
   background-size: 300% 300%;
   animation: gradientMove 12s ease infinite;
@@ -371,4 +372,75 @@ html {
 
 .item:hover {
   transform: translateY(-4px);
+}
+
+/*alinhar o texto abaixo do mapa*/
+#mapa p {
+  text-align: left;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Card do produto */
+.produto-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Carrossel */
+.carousel {
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Slides */
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 20s infinite;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Animação automática */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*respomsividade dos produtos mobile*/
+@media (max-width: 900px) {
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
 }
