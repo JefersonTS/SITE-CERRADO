@@ -444,3 +444,10 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/*BOTÃO CONHECER MAIS PRODUTOS*/
+.produtos-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
