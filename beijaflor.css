@@ -36,7 +36,7 @@ footer {
 }
 
 .hero {
-  height: 60vh;
+  height: 110vh;
   background-image: url("img/capa-beija-flor.jpg");
   /* caminho da imagem */
   background-attachment: fixed;
