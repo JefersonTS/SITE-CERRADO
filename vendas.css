@@ -69,6 +69,25 @@ body {
   margin: 20px;
 }
 
+/*aqui é onde fica a imagem no mobile */
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("img/capa-mobile.png");
+    background-attachment: fixed;
+    /* efeito parallax leve */
+    background-repeat: repeat-y;
+    /* ISSO resolve a duplicação */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
 footer {
   text-align: center;
   padding: 40px 20px;
