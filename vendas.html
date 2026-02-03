@@ -1,46 +1,301 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venda do Cerrado</title>
+    <title>Sabores do Cerrado | Cerrado 4x4</title>
     <link rel="stylesheet" href="vendas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- icone seta pra voltar -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icone seta pra cima -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
   <body>
-    <header class="hero-produtos">
-      <div class="hero-overlay">
-        <h1>Sabores do Cerrado</h1>
-        <p>Produtos artesanais que carregam tradição, sabor e identidade.</p>
+    <a
+      href="index.html"
+      class="btn btn-primary btn-floating btn-lg rounded-circle shadow-lg"
+      id="btn-back-to-index"
+      style="display: none"
+    >
+      <i class="fas fa-chevron-left"></i>
+
+      <!-- Ícone de seta (precisa do Font Awesome) -->
+    </a>
+
+    <script src="script.js"></script>
+
+    <div id="topo"></div>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Sabores do Cerrado 🍯🍷</h1>
+        <p>Produtos artesanais com alma, tradição e identidade mineira</p>
       </div>
     </header>
 
-    <section class="produtos">
-      <div class="produto-card">
-        <img src="img/pacoca.png" alt="Doce de Amendoim" />
-        <h3>Doce de Amendoim Artesanal</h3>
-        <p>Cremoso, sabor marcante e feito com ingredientes selecionados.</p>
-        <a href="https://wa.me/55SEUNUMERO" class="btn"
-          >Comprar pelo WhatsApp</a
-        >
+    <!-- PRODUTOS -->
+    <section class="produtos-section">
+      <div class="produtos-grid">
+        <!-- PRODUTO 1 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p1" id="p1-1" checked />
+            <input type="radio" name="p1" id="p1-2" />
+            <input type="radio" name="p1" id="p1-3" />
+
+            <div class="slides">
+              <img src="img/amendoim-1.jpg" />
+              <img src="img/amendoim-2.jpg" />
+              <img src="img/amendoim-3.jpg" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p1-3" class="prev s1">‹</label>
+              <label for="p1-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p1-1" class="prev s2">‹</label>
+              <label for="p1-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p1-2" class="prev s3">‹</label>
+              <label for="p1-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Doce de Amendoim</h3>
+          <p>Cremoso, artesanal e impossível comer só um 😋</p>
+        </div>
+
+        <!-- PRODUTO 2 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p2" id="p2-1" checked />
+            <input type="radio" name="p2" id="p2-2" />
+            <input type="radio" name="p2" id="p2-3" />
+
+            <div class="slides">
+              <img src="img/licores-1.JPG" />
+              <img src="img/licores-2.JPG" />
+              <img src="img/licores-3.JPG" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p2-3" class="prev s1">‹</label>
+              <label for="p2-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p2-1" class="prev s2">‹</label>
+              <label for="p2-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p2-2" class="prev s3">‹</label>
+              <label for="p2-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Licores Artesanais</h3>
+          <p>Doces, equilibrados e cheios de memória 🍓🍶</p>
+        </div>
+
+        <!-- PRODUTO 3 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p3" id="p3-1" checked />
+            <input type="radio" name="p3" id="p3-2" />
+            <input type="radio" name="p3" id="p3-3" />
+
+            <div class="slides">
+              <img src="img/branca-media-1.JPG" />
+              <img src="img/branca-media-2.JPG" />
+              <img src="img/branca-media-3.JPG" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p3-3" class="prev s1">‹</label>
+              <label for="p3-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p3-1" class="prev s2">‹</label>
+              <label for="p3-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p3-2" class="prev s3">‹</label>
+              <label for="p3-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Cachaça Artesanal</h3>
+          <p>Força, tradição e o sabor do Cerrado 🥃</p>
+        </div>
       </div>
 
-      <div class="produto-card">
-        <img src="img/doce-leite.png" alt="Doce de Leite" />
-        <h3>Doce de Leite Caseiro</h3>
-        <p>Receita tradicional, textura macia e sabor irresistível.</p>
-        <a href="https://wa.me/55SEUNUMERO" class="btn"
-          >Comprar pelo WhatsApp</a
-        >
+      <div class="produtos-grid">
+        <!-- PRODUTO 4 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p4" id="p4-1" checked />
+            <input type="radio" name="p4" id="p4-2" />
+            <input type="radio" name="p4" id="p4-3" />
+
+            <div class="slides">
+              <img src="img/branca-bala-1.JPG" />
+              <img src="img/branca-bala-2.JPG" />
+              <img src="img/branca-bala-3.JPG" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p4-3" class="prev s1">‹</label>
+              <label for="p4-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p4-1" class="prev s2">‹</label>
+              <label for="p4-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p4-2" class="prev s3">‹</label>
+              <label for="p4-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Cachaça + Bala na Palha</h3>
+          <p>
+            Sabor marcante, tradição mineira e balinhas que dão o charme final
+            🍬✨
+          </p>
+        </div>
+
+        <!-- PRODUTO 5 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p5" id="p5-1" checked />
+            <input type="radio" name="p5" id="p5-2" />
+            <input type="radio" name="p5" id="p5-3" />
+
+            <div class="slides">
+              <img src="img/amarela-media-1.JPG" />
+              <img src="img/amarela-media-2.JPG" />
+              <img src="img/amarela-media-3.JPG" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p5-3" class="prev s1">‹</label>
+              <label for="p5-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p5-1" class="prev s2">‹</label>
+              <label for="p5-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p5-2" class="prev s3">‹</label>
+              <label for="p5-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Cachaça Amarela</h3>
+          <p>Maturada em carvalho, dourada no tom e intensa no sabor 🟡🥃</p>
+        </div>
+
+        <!-- PRODUTO 6 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p6" id="p6-1" checked />
+            <input type="radio" name="p6" id="p6-2" />
+            <input type="radio" name="p6" id="p6-3" />
+
+            <div class="slides">
+              <img src="img/grande-branca-1.JPG" />
+              <img src="img/grande-branca-2.JPG" />
+              <img src="img/grande-branca-3.JPG" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p6-3" class="prev s1">‹</label>
+              <label for="p6-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p6-1" class="prev s2">‹</label>
+              <label for="p6-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p6-2" class="prev s3">‹</label>
+              <label for="p6-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Cachaça Artesanal 1L</h3>
+          <p>Sem aditivos, sem enfeite: só cachaça branca de verdade 🥃🔥</p>
+        </div>
       </div>
 
-      <div class="produto-card">
-        <img src="img/cachaca.png" alt="Cachaça Artesanal" />
-        <h3>Cachaça Artesanal</h3>
-        <p>Produção regional, envelhecida e cheia de personalidade.</p>
-        <a href="https://wa.me/55SEUNUMERO" class="btn"
-          >Comprar pelo WhatsApp</a
-        >
+      <div class="produtos-grid">
+        <!-- PRODUTO 7 -->
+        <div class="produto-card">
+          <div class="carousel">
+            <input type="radio" name="p7" id="p7-1" checked />
+            <input type="radio" name="p7" id="p7-2" />
+            <input type="radio" name="p7" id="p7-3" />
+
+            <div class="slides">
+              <img src="img/quadrada-amarela-1.JPG" />
+              <img src="img/quadrada-amarela-2.JPG" />
+              <img src="img/quadrada-amarela-3.JPG" />
+            </div>
+
+            <div class="controls">
+              <!-- Slide 1 -->
+              <label for="p7-3" class="prev s1">‹</label>
+              <label for="p7-2" class="next s1">›</label>
+
+              <!-- Slide 2 -->
+              <label for="p7-1" class="prev s2">‹</label>
+              <label for="p7-3" class="next s2">›</label>
+
+              <!-- Slide 3 -->
+              <label for="p7-2" class="prev s3">‹</label>
+              <label for="p7-1" class="next s3">›</label>
+            </div>
+          </div>
+
+          <h3>Cachaça Amarela 1L</h3>
+          <p>
+            Notas do carvalho, cor dourada e sabor marcante — 1 litro de
+            história 🥃✨
+          </p>
+        </div>
       </div>
     </section>
+
+    <footer>
+      <p>© Cerrado 4x4 • Sabores que contam histórias</p>
+    </footer>
+
+    <a
+      href="#topo"
+      class="btn btn-primary btn-floating btn-lg rounded-circle shadow-lg"
+      id="btn-back-to-top"
+      style="display: none"
+    >
+      <i class="fas fa-arrow-up"></i>
+      <!-- Ícone de seta (precisa do Font Awesome) -->
+    </a>
   </body>
 </html>
