@@ -45,6 +45,14 @@ body {
   padding: 20px;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    background-position: center top; /* sobe o foco da imagem */
+    padding: 40px 20px;
+  }
+}
+
 .hero-content {
   max-width: 850px;
   padding: 35px;
