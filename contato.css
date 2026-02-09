@@ -1,0 +1,167 @@
+/* =========================
+   RESET + BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(120deg, #064e3b, #022c22, #000);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  color: #fff;
+}
+
+/* Fundo animado */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  height: 90vh;
+  background-image: url("img/minhafoto.png"); /* você pode trocar depois */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 850px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 28px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Fade elegante */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+/* =========================
+   TRAJETÓRIA LAYOUT
+========================= */
+
+.trajetoria-section {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #064e3b, #022c22, #000);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+.trajetoria-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TEXTO */
+.trajetoria-texto {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.trajetoria-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.trajetoria-texto p {
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.trajetoria-texto ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.trajetoria-texto li {
+  padding: 6px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.trajetoria-texto li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+}
+
+/* IMAGEM */
+.trajetoria-imagem {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.trajetoria-imagem img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 900px) {
+  .trajetoria-container {
+    grid-template-columns: 1fr;
+  }
+
+  .trajetoria-imagem {
+    order: -1; /* imagem sobe no mobile */
+  }
+}
