@@ -30,7 +30,7 @@ body {
 
 .hero {
   height: 90vh;
-  background-image: url("img/capa-beija-flor.jpg");
+  background-image: url("img/capaprodutos.jpg");
   /* caminho da imagem */
   background-attachment: fixed;
   /* efeito parallax leve */
@@ -73,7 +73,7 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
-    background-image: url("img/capa-mobile.png");
+    background-image: url("img/capaprodutos.jpg");
     background-attachment: fixed;
     /* efeito parallax leve */
     background-repeat: repeat-y;

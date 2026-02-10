@@ -211,3 +211,9 @@ footer {
   z-index: 1000;
   /* Para ficar acima de outros elementos */
 }
+
+a {
+  /* Estilos para links */
+  color: #ffffff; /* Define a cor desejada, ex: preto */
+  text-decoration: none; /* Remove o sublinhado */
+}
