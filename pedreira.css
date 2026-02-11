@@ -36,7 +36,7 @@ footer {
 }
 
 .hero {
-  height: 110vh;
+  height: 60vh;
   background-image: url("img/capa-pedreira.jpg");
   /* caminho da imagem */
   background-attachment: fixed;

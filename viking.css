@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -21,23 +20,9 @@ footer {
   font-size: 0.9rem;
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .hero {
   height: 60vh;
-  background-image: url("img/capa-beija-flor.jpg");
+  background-image: url("img/capaviking.jpg");
   /* caminho da imagem */
   background-attachment: fixed;
   /* efeito parallax leve */
@@ -95,7 +80,7 @@ footer {
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
-    background-image: url("img/capa-beija-flor-mobile.jpg");
+    background-image: url("img/capaviking.jpg");
     background-attachment: fixed;
     /* efeito parallax leve */
     background-repeat: repeat-y;
@@ -108,68 +93,6 @@ footer {
     text-align: center;
     padding: 20px;
   }
-}
-
-/*aqui é onde formata as imagens das cachoeiras*/
-
-gr-id {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
-  gap: 1.5rem;
-  justify-content: center;
-  margin-block-end: 20px;
-}
-
-sq-image {
-  width: 100%;
-  border-radius: 1em;
-}
-
-/* imagem */
-sq-image img {
-  width: 100%;
-  display: block;
-  border-radius: 1em;
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease;
-}
-
-/* DESKTOP - passar o mouse */
-sq-image:hover img {
-  transform: scale(1.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-}
-
-/* MOBILE - toque com o dedo */
-@media (max-width: 400px) {
-  sq-image:active img,
-  sq-image:focus-within img {
-    transform: scale(1.08);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-  }
-}
-
-/* aqui é onde formata o texto dentro das imagens*/
-.img-beija-flor {
-  position: relative;
-}
-
-#image {
-  position: absolute;
-}
-
-.img-beija-flor p {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  border-radius: 25px;
-  padding: 20px;
-  transition: 0.4s;
-  margin: 20px;
-  position: absolute;
-  font-size: 20px;
-  left: 200px;
-  bottom: 50px;
 }
 
 /*formatação da extrutura em geral */
@@ -251,6 +174,68 @@ sq-image:hover img {
   .estrutura-itens {
     grid-template-columns: 1fr;
   }
+}
+
+/*aqui é onde formata as imagens das cachoeiras*/
+
+gr-id {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
+  gap: 1.5rem;
+  justify-content: center;
+  margin-block-end: 20px;
+}
+
+sq-image {
+  width: 100%;
+  border-radius: 1em;
+}
+
+/* imagem */
+sq-image img {
+  width: 100%;
+  display: block;
+  border-radius: 1em;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* DESKTOP - passar o mouse */
+sq-image:hover img {
+  transform: scale(1.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* MOBILE - toque com o dedo */
+@media (max-width: 400px) {
+  sq-image:active img,
+  sq-image:focus-within img {
+    transform: scale(1.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* aqui é onde formata o texto dentro das imagens*/
+.img-achado {
+  position: relative;
+}
+
+#image {
+  position: absolute;
+}
+
+.img-achado p {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 20px;
+  transition: 0.4s;
+  margin: 20px;
+  position: absolute;
+  font-size: 20px;
+  left: 200px;
+  bottom: 50px;
 }
 
 /* aqui é onde se configura o botão voltar ao TOPO */
