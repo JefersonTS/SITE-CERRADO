@@ -96,12 +96,12 @@ footer {
 @media (max-width: 768px) {
   .hero {
     background-image: url("img/capa-beija-flor-mobile.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     /* efeito parallax leve */
     background-repeat: repeat-y;
     /* ISSO resolve a duplicação */
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     display: flex;
     align-items: center;
     justify-content: center;
