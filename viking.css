@@ -22,7 +22,7 @@ footer {
 
 .hero {
   height: 60vh;
-  background-image: url("img/capaviking.jpg");
+  background-image: url("img/capa_viking.jpg");
   /* caminho da imagem */
   background-attachment: fixed;
   /* efeito parallax leve */
@@ -80,7 +80,7 @@ footer {
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
-    background-image: url("img/capaviking.jpg");
+    background-image: url("img/capa_viking_mobile.JPG");
     background-attachment: scroll;
     /* efeito parallax leve */
     background-repeat: repeat-y;
@@ -92,6 +92,13 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
   }
 }
 

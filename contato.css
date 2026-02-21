@@ -45,9 +45,25 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh;
-    background-position: center top; /* sobe o foco da imagem */
-    padding: 40px 20px;
+    background-image: url("img/minhafoto.png");
+    background-attachment: scroll;
+    /* efeito parallax leve */
+    background-repeat: repeat-y;
+    /* ISSO resolve a duplicação */
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
   }
 }
 
