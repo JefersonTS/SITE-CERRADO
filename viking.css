@@ -21,7 +21,7 @@ footer {
 }
 
 .hero {
-  height: 60vh;
+  height: 80vh;
   background-image: url("img/capa_viking.jpg");
   /* caminho da imagem */
   background-attachment: fixed;
@@ -29,7 +29,7 @@ footer {
   background-repeat: no-repeat;
   /* ISSO resolve a duplicação */
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
   display: flex;
   align-items: center;
   justify-content: center;
